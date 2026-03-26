@@ -1,4 +1,13 @@
 ﻿[*.cs]
 
 # IDE0008: Use explicit type
-dotnet_diagnostic.IDE0008.severity = warning
+dotnet_diagnostic.IDE0008.severity = silent
+
+# IDE0055: Fix formatting
+dotnet_diagnostic.IDE0055.severity = warning
+
+# IDE0021: Use block body for constructor
+dotnet_diagnostic.IDE0021.severity = none
+
+# IDE0060: Remove unused parameter
+dotnet_diagnostic.IDE0060.severity = suggestion
