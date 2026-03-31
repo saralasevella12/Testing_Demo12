@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -61,11 +62,11 @@ namespace Testing_Demo12.Pages
 
             if (newCode.Text == "TA_" + timestamp)
             {
-                Console.WriteLine("Time record created successfully, test passed");
+                Assert.Pass("Time record created successfully, test passed");
             }
             else
             {
-                Console.WriteLine("Failed to create Time record, test failed");
+                Assert.Fail("Failed to create Time record, test failed");
             }
         }
         public void EditTMRecord(IWebDriver driver)
